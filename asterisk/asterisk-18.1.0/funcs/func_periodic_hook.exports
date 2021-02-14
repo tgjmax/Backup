@@ -1,0 +1,7 @@
+{
+	global:
+		*ast_beep_start;
+		*ast_beep_stop;
+	local:
+		*;
+};

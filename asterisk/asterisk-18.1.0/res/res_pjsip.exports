@@ -1,0 +1,10 @@
+{
+	global:
+		ast_sip_*;
+		__ast_sip_*;
+		ast_copy_pj_str;
+		ast_copy_pj_str2;
+		ast_pjsip_rdata_get_endpoint;
+	local:
+		*;
+};

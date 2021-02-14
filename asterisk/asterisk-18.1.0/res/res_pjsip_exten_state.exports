@@ -1,0 +1,7 @@
+{
+	global:
+		ast_sip_register_exten_state_provider;
+		ast_sip_unregister_exten_state_provider;
+	local:
+		*;
+};

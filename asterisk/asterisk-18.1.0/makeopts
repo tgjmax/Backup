@@ -1,0 +1,370 @@
+# NOTE: Names of _INCLUDE and _LIB entries in this file must be
+#       the exact uppercase equivalents of the names used for
+#       dependencies in menuselect for the same package.
+
+CC=gcc
+HOST_CC=cc
+BUILD_CC=cc
+CXX=g++
+
+INSTALL=/usr/bin/install -c
+AWK=gawk
+BISON=/usr/bin/bison
+FLEX=/usr/bin/flex
+GREP=/bin/grep
+PYTHON=/usr/bin/python2.7
+MAKE=make
+AR=ar
+RANLIB=ranlib
+FIND=/usr/bin/find
+BASENAME=/usr/bin/basename
+SHELL=/bin/sh
+LN=/bin/ln
+DOXYGEN=:
+DOT=:
+STRIP=strip
+WGET=/usr/bin/wget
+FETCH=
+DOWNLOAD=/usr/bin/wget
+DOWNLOAD_TO_STDOUT=/usr/bin/wget -q -O-
+DOWNLOAD_TIMEOUT=--timeout=$1
+AST_DOWNLOAD_CACHE=
+SOUNDS_CACHE_DIR=$(or ,${AST_DOWNLOAD_CACHE})
+EXTERNALS_CACHE_DIR=$(or ,${AST_DOWNLOAD_CACHE})
+XMLLINT=:
+XMLSTARLET=:
+BASH=/bin/sh
+MD5=md5sum
+SHA1SUM=/usr/bin/sha1sum
+OPENSSL=/usr/bin/openssl
+LDCONFIG=/sbin/ldconfig
+GIT=/usr/bin/git
+ALEMBIC=:
+TAR=/bin/tar
+PATCH=/usr/bin/patch
+SED=/bin/sed
+NM=/usr/bin/nm
+CAT=/bin/cat
+CUT=/usr/bin/cut
+
+BUILD_PLATFORM=x86_64-pc-linux-gnu
+BUILD_CPU=x86_64
+BUILD_VENDOR=pc
+BUILD_OS=linux-gnu
+
+HOST_PLATFORM=x86_64-pc-linux-gnu
+HOST_CPU=x86_64
+HOST_VENDOR=pc
+HOST_OS=linux-gnu
+
+OSARCH=linux-gnu
+OSREV=4.15.0-124-generic
+
+BIND8_CFLAGS=
+
+CROSS_COMPILING=
+
+PTHREAD_CFLAGS=-pthread
+PTHREAD_LIBS=
+
+CONFIG_CFLAGS=
+CONFIG_LDFLAGS=
+CONFIG_SIGNED_CHAR=
+
+GNU_LD=1
+HAVE_DYNAMIC_LIST=1
+
+prefix = /usr
+exec_prefix = ${prefix}
+
+datarootdir = ${prefix}/share
+datadir = ${datarootdir}
+includedir = ${prefix}/include
+infodir = ${datarootdir}/info
+libdir = ${exec_prefix}/lib
+libexecdir = ${exec_prefix}/libexec
+localstatedir = /var
+mandir = ${datarootdir}/man
+sbindir = ${exec_prefix}/sbin
+sharedstatedir = ${prefix}/com
+sysconfdir = /etc
+
+ASTSBINDIR = ${sbindir}
+ASTETCDIR = ${sysconfdir}/asterisk
+ASTHEADERDIR = ${includedir}/asterisk
+ASTLIBDIR = ${libdir}
+ASTMODDIR = ${libdir}/asterisk/modules
+ASTMANDIR = ${mandir}
+astvarlibdir = ${localstatedir}/lib/asterisk
+ASTVARLIBDIR = ${localstatedir}/lib/asterisk
+ASTDATADIR = ${astvarlibdir}
+ASTDBDIR = ${astvarlibdir}
+ASTKEYDIR = ${astvarlibdir}
+ASTSPOOLDIR = ${localstatedir}/spool/asterisk
+ASTLOGDIR = ${localstatedir}/log/asterisk
+ASTVARRUNDIR = ${localstatedir}/run/asterisk
+
+AST_DEVMODE=
+AST_DEVMODE_STRICT=
+DISABLE_XMLDOC=no
+NOISY_BUILD=
+
+AST_CODE_COVERAGE=no
+
+AST_ASTERISKSSL=yes
+
+AST_DECLARATION_AFTER_STATEMENT=-Wdeclaration-after-statement
+AST_TRAMPOLINES=-Wtrampolines
+AST_NO_STRICT_OVERFLOW=-fno-strict-overflow
+AST_NO_FORMAT_TRUNCATION=-Wno-format-truncation
+AST_NO_STRINGOP_TRUNCATION=-Wno-stringop-truncation
+AST_SHADOW_WARNINGS=-Wshadow
+AST_NESTED_FUNCTIONS=
+AST_CLANG_BLOCKS=
+AST_CLANG_BLOCKS_LIBS=
+C_COMPILER_FAMILY=gcc
+AST_RPATH=
+AST_FORTIFY_SOURCE=-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
+
+ALSA_INCLUDE=
+ALSA_LIB=
+
+BFD_INCLUDE=
+BFD_LIB=
+
+BLUETOOTH_INCLUDE=
+BLUETOOTH_LIB=
+
+CODEC2_INCLUDE=
+CODEC2_LIB=
+
+CURL_INCLUDE=
+CURL_LIB=-lcurl
+
+FREETDS_INCLUDE=
+FREETDS_LIB=
+
+GENERIC_ODBC_INCLUDE=
+GENERIC_ODBC_LIB=
+
+GMIME_INCLUDE=
+GMIME_LIB=
+
+HOARD_LIB=
+
+GSM_INTERNAL=yes
+GSM_INCLUDE=
+GSM_LIB=
+
+ILBC_INTERNAL=yes
+ILBC_INCLUDE=
+ILBC_LIB=
+
+GTK2_INCLUDE=
+GTK2_LIB=
+
+ICAL_INCLUDE=
+ICAL_LIB=
+
+ICONV_INCLUDE= 
+ICONV_LIB= -lc 
+
+IKSEMEL_INCLUDE=
+IKSEMEL_LIB=
+
+IMAP_TK_INCLUDE=-DUSE_SYSTEM_CCLIENT
+IMAP_TK_LIB=-lcrypto -lssl -lc-client 
+
+IODBC_INCLUDE=
+IODBC_LIB=
+
+JACK_INCLUDE=
+JACK_LIB=
+
+JANSSON_BUNDLED=no
+JANSSON_INCLUDE=
+JANSSON_LIB=-ljansson
+
+URIPARSER_INCLUDE=
+URIPARSER_LIB=
+
+LDAP_INCLUDE=
+LDAP_LIB=
+
+LIBEDIT_INCLUDE=-I/usr/include/editline
+LIBEDIT_LIB=-ledit -lncurses -lbsd
+
+LUA_INCLUDE=
+LUA_LIB=
+
+MYSQLCLIENT_INCLUDE=-I/usr/include/mysql
+MYSQLCLIENT_LIB=-L/usr/lib/x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -lrt -latomic -lssl -lcrypto -ldl
+
+NBS_INCLUDE=
+NBS_LIB=
+
+NEON_INCLUDE=
+NEON_LIB=
+NEON29_INCLUDE=
+NEON29_LIB=
+
+NETSNMP_INCLUDE=
+NETSNMP_LIB=
+
+NEWT_INCLUDE= 
+NEWT_LIB= -lnewt 
+
+OGG_INCLUDE=
+OGG_LIB=
+
+OPUS_INCLUDE=
+OPUS_LIB=
+
+OPUSFILE_INCLUDE=
+OPUSFILE_LIB=
+
+OSPTK_INCLUDE=
+OSPTK_LIB=
+
+# ossaudio can optionally use ffmpeg, x11, sdl and sdl_image.
+# Because sdl_image in turn depends on sdl, we don't duplicate the include
+OSS_INCLUDE=     
+OSS_LIB=     -lX11 
+
+PGSQL_INCLUDE=-I/usr/include/postgresql
+PGSQL_LIB=-L/usr/lib/x86_64-linux-gnu -lpq -lz
+
+PJPROJECT_BUNDLED=yes
+PJPROJECT_INCLUDE=-DPJ_AUTOCONF=1 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1 -DPJMEDIA_HAS_VPX_CODEC=1 -I/home/wielabs/Projects/asterisk/asterisk-18.1.0/third-party/pjproject/source/pjlib/include -I/home/wielabs/Projects/asterisk/asterisk-18.1.0/third-party/pjproject/source/pjlib-util/include -I/home/wielabs/Projects/asterisk/asterisk-18.1.0/third-party/pjproject/source/pjnath/include -I/home/wielabs/Projects/asterisk/asterisk-18.1.0/third-party/pjproject/source/pjmedia/include -I/home/wielabs/Projects/asterisk/asterisk-18.1.0/third-party/pjproject/source/pjsip/include
+PJPROJECT_LIB=
+PJPROJECT_DIR=third-party/pjproject
+
+POPT_INCLUDE=
+POPT_LIB=
+
+PORTAUDIO_INCLUDE=
+PORTAUDIO_LIB=
+
+PRI_INCLUDE=
+PRI_LIB=
+
+PYTHONDEV_INCLUDE=
+PYTHONDEV_LIB=
+
+RESAMPLE_INCLUDE=
+RESAMPLE_LIB=
+
+FFTW3_INCLUDE=
+FFTW3_LIB=
+
+RT_LIB= -lrt 
+
+SS7_INCLUDE=
+SS7_LIB=
+
+HAVE_SYSTEMD=0
+SYSTEMD_INCLUDE=
+SYSTEMD_LIB=
+
+OPENR2_INCLUDE=
+OPENR2_LIB=
+
+COROSYNC_INCLUDE=
+COROSYNC_LIB=
+
+RADIUS_INCLUDE=
+RADIUS_LIB=
+
+FFMPEG_INCLUDE=
+FFMPEG_LIB=
+
+X11_INCLUDE= 
+X11_LIB= -lX11 
+
+SDL_INCLUDE=
+SDL_LIB=
+
+SDL_IMAGE_INCLUDE=
+SDL_IMAGE_LIB=
+
+SPANDSP_INCLUDE=
+SPANDSP_LIB=
+
+SPEEX_INCLUDE=
+SPEEX_LIB=
+
+SPEEXDSP_INCLUDE=
+SPEEXDSP_LIB=
+
+SQLITE_INCLUDE=
+SQLITE_LIB=
+
+SQLITE3_INCLUDE= -pthread
+SQLITE3_LIB= -lsqlite3 
+
+SRTP_LIB=
+SRTP_INCLUDE=
+
+OPENSSL_INCLUDE= 
+OPENSSL_LIB= -lssl -lcrypto
+
+CRYPT_INCLUDE= 
+CRYPT_LIB= -lcrypt 
+
+CRYPTO_INCLUDE= 
+CRYPTO_LIB= -lcrypto 
+
+TONEZONE_INCLUDE=
+TONEZONE_LIB=
+
+UNBOUND_INCLUDE=
+UNBOUND_LIB=
+
+UNIXODBC_INCLUDE=
+UNIXODBC_LIB=
+
+UUID_INCLUDE= 
+UUID_LIB= -luuid 
+
+VORBIS_INCLUDE=
+VORBIS_LIB=
+
+VPB_INCLUDE=
+VPB_LIB=
+
+HAVE_DAHDI=0
+DAHDI_INCLUDE=
+
+ZLIB_INCLUDE= 
+ZLIB_LIB= -lz 
+
+ISDNNET_INCLUDE=
+ISDNNET_LIB=
+
+MISDN_INCLUDE=
+MISDN_LIB=
+
+SUPPSERV_INCLUDE=
+SUPPSERV_LIB=
+
+CAP_LIB= -lcap 
+CAP_INCLUDE= 
+
+BKTR_INCLUDE= 
+BKTR_LIB= -lc 
+
+LIBXML2_INCLUDE=-I/usr/include/libxml2
+LIBXML2_LIB=-lxml2
+
+LIBXSLT_INCLUDE= -I/usr/include/libxml2
+LIBXSLT_LIB= -lxslt -lxml2
+
+# if poll is not present, let the makefile know.
+POLL_AVAILABLE=1
+TIMERFD_INCLUDE=
+
+SNDFILE_INCLUDE=
+SNDFILE_LIB=
+
+BEANSTALK_INCLUDE=
+BEANSTALK_LIB=

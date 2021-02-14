@@ -1,0 +1,6 @@
+{
+	global:
+		stasis_app_*;
+	local:
+		*;
+};

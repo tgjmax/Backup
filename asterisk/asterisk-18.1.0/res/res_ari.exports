@@ -1,0 +1,6 @@
+{
+	global:
+		ast_ari_*;
+	local:
+		*;
+};

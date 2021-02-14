@@ -1,0 +1,10 @@
+{
+	global:
+		ast_sip_session_*;
+		__ast_sip_session_*;
+		ast_sip_dialog_get_session;
+		ast_sip_channel_pvt_alloc;
+		ast_sip_create_joint_call_cap;
+	local:
+		*;
+};

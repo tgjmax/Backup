@@ -1,0 +1,6 @@
+{
+	global:
+		ast_multicast_rtp*;
+	local:
+		*;
+};

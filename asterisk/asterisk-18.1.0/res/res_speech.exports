@@ -1,0 +1,6 @@
+{
+	global:
+		ast_*;
+	local:
+		*;
+};

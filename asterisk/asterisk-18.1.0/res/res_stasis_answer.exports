@@ -1,0 +1,6 @@
+{
+	global:
+		stasis_app_control_answer;
+	local:
+		*;
+};
