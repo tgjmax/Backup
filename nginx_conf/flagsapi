@@ -1,0 +1,32 @@
+server {
+    return 404;
+}
+
+server {
+        listen 80;
+	listen [::]:80;
+        server_name flagsapi.wielabs.com;	
+	return 301 https://flagsapi.wielabs.com$request_uri;
+}
+
+server {
+	listen 443 ssl;
+	server_name flagsapi.wielabs.com;
+
+	ssl on;
+
+	ssl_certificate /etc/nginx/ssl/flagsapi/fullchain.pem;
+	ssl_certificate_key /etc/nginx/ssl/flagsapi/privkey.pem;
+
+	ssl_session_timeout 1d;
+	ssl_session_cache shared:SSL:20m;
+	ssl_session_tickets off;
+
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+	ssl_prefer_server_ciphers on;
+
+	location / {
+		root /home/wielabs/Projects/flags/w20;
+		try_files $uri $uri/ =404;
+	}
+}
